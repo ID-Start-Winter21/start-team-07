@@ -15,7 +15,7 @@ Thema des Projektmoduls der Studierenden im ersten Semester lautet ‚Designing 
 
 ## Ideenvorstellung 
 
-Idee wird hier ausführlich beschrieben
+Unsere Gruppe möchte einen pesonalisierten Alexa "Morgenroutine-Skill" erstellen, der durch Gesichtserkennung abgerufen wird. - Alexa startet mit dir in den Tag
 
 ## Updates 
 
