@@ -13,11 +13,15 @@ Thema des Projektmoduls der Studierenden im ersten Semester lautet ‚Designing 
 - [Marina Oroz](https://github.com/marinaoroz)
 - [Timo Warendorf](https://github.com/30elf)
 
-## Ideenvorstellung 
+## Konzept
 
-Unsere Gruppe möchte einen pesonalisierten Alexa "Morgenroutine-Skill" erstellen, der durch Gesichtserkennung abgerufen wird. - Alexa startet mit dir in den Tag
+Eine Morgenroutine stellt die Weiche für einen guten Tag: bewusst gestaltet, sorgt sie für mehr Konzentration, Energie und Fröhlichkeit. Das funktioniert auch, wenn du nur wenig Zeit aufwenden kannst. Deshalb haben wir uns als Gruppe überlegt einen Alexa Interaction Skill zu erstellen der "Morgenroutine" heißt, welches dem Benutzer die Möglichkeit gibt den Tag, strukturierter gestalten kann. Der Skill wird mit einer Kamera verbunden welches durch Gesichtserkennung den individuellen Benutzer erkennt und die zuvor eingestellten Einstellungen abruft. Die Kamera wird hinter den Spiegel installiert und ist somit nicht sichtbar. Zuvor gesagtes wird mit vielen kurzweiligen Funktionen erreicht. Funktionen wie Zähneputzen helfen dem Benutzer die empfolehnen drei Minuten einzuhalten und zeitgleich lieblings Musik des Benutzer abzuspielen. Die Funktion "Duschplaylist" ist recht ähnlich und startet die Persönlichen Playlist des Benutzer während den duschen und gibt dem Benutzer ein Zeitgefühl wie lange er sich schon in der Dusche befindet. Außerdem kann man sich die heutigen Nachrichten, Aufgaben, Termine oder Fun-Facts vorlesen. Die Besucher des Festivals können dann vor dem Spiegel stehen und mit den default Einstellungen den Skill starten und die ganzen Funktionen erleben oder durch uns den Skill erklärt bekommen.
 
 ## Updates 
 
-Nummerierung der versionen derzeit pre Alpha 0.1
+Aplpha pre-release 0.2
 
+## Probleme
+---
+
+## Quellen und Dank
