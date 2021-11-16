@@ -25,6 +25,9 @@ Die Besucher des Festivals können dann vor dem Spiegel stehen und mit den defau
 
 Aplpha pre-release 0.2
 
+## Storyboard
+![storyboard](https://user-images.githubusercontent.com/91656601/142069310-7de448bd-45f0-4107-8cad-5628822a7b46.png)
+
 ## To-Dos 
 - [x] Einsatzmöglichkeiten für die Kamera überlegen bis 15.11
 - [x] Readme Verbessern und schöner gestalten 
