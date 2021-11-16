@@ -16,11 +16,32 @@ Thema des Projektmoduls der Studierenden im ersten Semester lautet ‚Designing 
 ## Konzept
 
 Eine Morgenroutine stellt die Weiche für einen guten Tag: Bewusst gestaltet, sorgt sie für mehr Konzentration, Energie und Fröhlichkeit. Das funktioniert auch, wenn du nur wenig Zeit aufwenden kannst. Deshalb haben wir uns als Gruppe überlegt einen Alexa Interaction Skill zu erstellen, der "Morgenroutine" heißt. Dies gibt dem Benutzer die Möglichkeit seinen Tag strukturierter zu gestalten. 
-Der Skill wird mit einer Kamera verbunden, welche durch Gesichtserkennung den individuellen Benutzer erkennt und die zuvor eingestellten Einstellungen abruft. Die Kamera wird hinter dem Spiegel installiert und ist somit nicht sichtbar. Funktionen, wie zum Beispiel Zähneputzen, helfen dem Benutzer die empfohlenen drei Minuten einzuhalten und zeitgleich kann er seine Lieblings-Musik hören. Die Funktion "Duschplaylist" ist recht ähnlich und startet die persönliche Playlist des Benutzer während des Duschens und gibt ihm ein Zeitgefühl, wie lange er sich schon in der Dusche befindet. Der Alexa Skill kann außerdem die heutigen Nachrichten, das Wetter oder auch Funfacts vorlesen. Deine persöhnlichen Aufgaben und Termine für den Tag, kann der Skill dir auch nennen. Die Besucher des Festivals können dann vor dem Spiegel stehen und mit den default Einstellungen den Skill starten und die ganzen Funktionen erleben oder sich von unseren Team den Skill vorgeführt bekommen. Wir bieten den Besuchern an, eine neue Perpektive kennen zu lernen, wie schön der Start in den Tag mit dem Alexa Skill doch sein kann, wenn er sonst immer doch so hektisch und ungeordnet ist.
+
+Der Skill wird mit einer Kamera verbunden, welche durch Gesichtserkennung den individuellen Benutzer erkennt und die zuvor eingestellten Einstellungen abruft. Die Kamera wird hinter dem Spiegel installiert und ist somit nicht sichtbar. Funktionen, wie zum Beispiel Zähneputzen, helfen dem Benutzer die empfohlenen drei Minuten einzuhalten und zeitgleich kann er seine Lieblings-Musik hören. Die Funktion "Duschplaylist" ist recht ähnlich und startet die persönliche Playlist des Benutzer während des Duschens und gibt ihm ein Zeitgefühl, wie lange er sich schon in der Dusche befindet. Der Alexa Skill kann außerdem die heutigen Nachrichten, das Wetter oder auch Funfacts vorlesen. Deine persöhnlichen Aufgaben und Termine für den Tag, kann der Skill dir auch nennen. 
+
+Die Besucher des Festivals können dann vor dem Spiegel stehen und mit den default Einstellungen den Skill starten und die ganzen Funktionen erleben oder sich von unseren Team den Skill vorgeführt bekommen. Wir bieten den Besuchern an, eine neue Perpektive kennen zu lernen, wie schön der Start in den Tag mit dem Alexa Skill doch sein kann, wenn er sonst immer doch so hektisch und ungeordnet ist.
 
 ## Updates 
 
 Aplpha pre-release 0.2
+
+## To-Dos 
+- [x] Einsatzmöglichkeiten für die Kamera überlegen bis 15.11
+- [x] Readme Verbessern und schöner gestalten 
+- [ ] Name für den Skill überlegen bis 18.11
+- [ ] Kamera einstellen und mit der Gesichtserkennung’s Software verknüpfen
+- [ ] Alexa mit Kamera verbinden 
+- [ ] Überlegen wie wir den Skill sympathischer gestalten können
+- [ ] Skill Icon erstellen bis 18.11
+- [ ] Voiceflow verbessern 
+- [ ] Fehler in Code ausbessern
+- [ ] Readme Verbessern und schöner gestalten 
+- [x] Konzept in Github schreiben bis 18.11 
+- [x] Storyboard erstellen bis 18.11 24 Uhr 
+- [x] Voiceflow Model in der Developer Console als code festlegen (versuch morgen das zu erledigen) 15.11
+- [x] Links an TechNinja gesendet - Antwort schon erhalten, Montag wird das mit der Socher besprochen
+- [x] Voiceflow fertigstellen bis 15.11
+
 
 ## Probleme
 
@@ -30,7 +51,5 @@ Aplpha pre-release 0.2
 - Befehl Stop geht nicht
 - Musik beim Zähne putzen geht nicht
 - Antwort_negativ Intent funktioniert nicht
-
----
 
 ## Quellen und Dank
