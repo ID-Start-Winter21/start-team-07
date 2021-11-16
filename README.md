@@ -23,6 +23,14 @@ Der Skill wird mit einer Kamera verbunden, welche durch Gesichtserkennung den in
 Aplpha pre-release 0.2
 
 ## Probleme
+
+### Momentane Bugs - 16.11.21 
+- Aufgaben Intent nicht abrufbar
+- man kann bisher noch nicht ohne Duschplaylist duschen
+- Befehl Stop geht nicht
+- Musik beim Zähne putzen geht nicht
+- Antwort_negativ Intent funktioniert nicht
+
 ---
 
 ## Quellen und Dank
