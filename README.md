@@ -48,7 +48,7 @@ Aplpha pre-release 0.2
 
 ## Probleme
 
-### Momentane Bugs - 16.11.21 
+### Momentane Bugs - 17.11.21 
 - Aufgaben Intent nicht abrufbar
 - man kann bisher noch nicht ohne Duschplaylist duschen
 - Befehl Stop geht nicht
