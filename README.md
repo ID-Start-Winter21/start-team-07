@@ -31,14 +31,14 @@ Aplpha pre-release 0.2
 ## To-Dos 
 - [x] Einsatzmöglichkeiten für die Kamera überlegen bis 15.11
 - [x] Readme Verbessern und schöner gestalten 
-- [ ] Name für den Skill überlegen bis 18.11
+- [x] Name für den Skill überlegen bis 18.11
 - [ ] Kamera einstellen und mit der Gesichtserkennung’s Software verknüpfen
 - [ ] Alexa mit Kamera verbinden 
 - [ ] Überlegen wie wir den Skill sympathischer gestalten können
-- [ ] Skill Icon erstellen bis 18.11
+- [x] Skill Icons erstellen bis 18.11
 - [ ] Voiceflow verbessern 
 - [ ] Fehler in Code ausbessern
-- [ ] Readme Verbessern und schöner gestalten 
+- [x] Readme Verbessern und schöner gestalten 
 - [x] Konzept in Github schreiben bis 18.11 
 - [x] Storyboard erstellen bis 18.11 24 Uhr 
 - [x] Voiceflow Model in der Developer Console als code festlegen (versuch morgen das zu erledigen) 15.11
