@@ -31,15 +31,7 @@
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": [
-                        "tschüss",
-                        "fertig",
-                        "beende meine morgenroutine",
-                        "ich bin fertig mit meiner morgenroutine",
-                        "ich bin fertig",
-                        "halt",
-                        "stop"
-                    ]
+                    "samples": []
                 },
                 {
                     "name": "AMAZON.CancelIntent",
@@ -53,64 +45,72 @@
                 },
                 {
                     "name": "antwort_positiv",
-                    "slots": [],
+                    "slots": [
+                        {
+                            "name": "positives",
+                            "type": "positives"
+                        }
+                    ],
                     "samples": [
-                        "sehr gut und selbst",
-                        "ganz gut und selbst",
-                        "gut und selbst",
-                        "sehr gut und selber",
-                        "ganz gut und selber",
-                        "gut und selber",
-                        "sehr gut selber",
-                        "ganz gut selber",
-                        "gut selber",
-                        "sehr gut und dir",
-                        "ganz gut und dir",
-                        "gut und dir",
-                        "sehr gut selbst",
-                        "ganz gut selbst",
-                        "gut selbst",
-                        "sehr gut dir",
-                        "ganz gut dir",
-                        "gut dir",
-                        "mir gehts ganz gut",
-                        "mir gehts sehr gut",
-                        "mir gehts gut",
-                        "mir geht es ganz gut",
-                        "mir geht es sehr gut",
-                        "mir geht es gut",
-                        "ganz gut",
-                        "sehr gut",
-                        "gut"
+                        "sehr {positives} und selbst",
+                        "ganz {positives} und selbst",
+                        "{positives} und selbst",
+                        "sehr {positives} und selber",
+                        "ganz {positives} und selber",
+                        "{positives} und selber",
+                        "sehr {positives} selber",
+                        "ganz {positives} selber",
+                        "{positives} selber",
+                        "sehr {positives} und dir",
+                        "ganz {positives} und dir",
+                        "{positives} und dir",
+                        "sehr {positives} selbst",
+                        "ganz {positives} selbst",
+                        "{positives} selbst",
+                        "sehr {positives} dir",
+                        "ganz {positives} dir",
+                        "{positives} dir",
+                        "mir gehts ganz {positives}",
+                        "mir gehts sehr {positives}",
+                        "mir gehts {positives}",
+                        "mir geht es ganz {positives}",
+                        "mir geht es sehr {positives}",
+                        "mir geht es {positives}",
+                        "ganz {positives}",
+                        "sehr {positives}",
+                        "{positives}"
                     ]
                 },
                 {
                     "name": "antwort_negativ",
-                    "slots": [],
+                    "slots": [
+                        {
+                            "name": "negatives",
+                            "type": "negatives"
+                        },
+                        {
+                            "name": "neutral",
+                            "type": "neutral"
+                        }
+                    ],
                     "samples": [
-                        "so lala",
-                        "naja geht schon",
-                        "geht so",
-                        "naja geht so",
-                        "geht schon",
-                        "geht",
-                        "naja es geht",
-                        "ja es geht",
-                        "ja es geht so",
-                        "naja passt schon",
-                        "naja mir gehts nicht so gut",
-                        "naja nicht so gut",
-                        "mir geht es nicht gut",
-                        "mir geht es nicht so gut",
-                        "mir gehts nicht so gut",
-                        "mir gehts nicht gut",
-                        "mir geht es schlecht",
-                        "mir gehts schlecht",
-                        "nicht so gut",
-                        "passt schon",
-                        "naja",
-                        "nicht gut",
-                        "schlecht"
+                        "so {neutral}",
+                        "{neutral} {neutral}",
+                        "ja {neutral}",
+                        "ja es {neutral}",
+                        "{neutral} passt schon",
+                        "{neutral} mir gehts {negatives}",
+                        "{neutral} {negatives}",
+                        "mir geht es {negatives}",
+                        "mir geht es {negatives}",
+                        "mir gehts {negatives}",
+                        "mir gehts {negatives}",
+                        "mir geht es {negatives}",
+                        "mir gehts {negatives}",
+                        "{negatives}",
+                        "{neutral}",
+                        "{negatives}",
+                        "{negatives}"
                     ]
                 },
                 {
@@ -229,11 +229,69 @@
                     ]
                 },
                 {
+                    "name": "unterbrechung",
+                    "slots": [],
+                    "samples": [
+                        "stop",
+                        "ciao",
+                        "halt",
+                        "ich bin fertig",
+                        "ich bin fertig mit meiner morgenroutine",
+                        "beende meine morgenroutine",
+                        "fertig",
+                        "tschüss"
+                    ]
+                },
+                {
                     "name": "AMAZON.NavigateHomeIntent",
                     "samples": []
                 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "positives",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "gut",
+                                "synonyms": [
+                                    "good"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "negatives",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "schlecht",
+                                "synonyms": [
+                                    "nicht gut",
+                                    "nicht so gut"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "neutral",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "naja",
+                                "synonyms": [
+                                    "es geht",
+                                    "passt",
+                                    "geht so",
+                                    "lala"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
