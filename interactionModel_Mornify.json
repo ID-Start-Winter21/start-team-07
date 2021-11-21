@@ -114,16 +114,59 @@
                     ]
                 },
                 {
-                    "name": "AMAZON.YesIntent",
+                    "name": "duschplaylist",
+                    "slots": [],
                     "samples": [
-                        "jap",
-                        "Jo",
-                        "Yes"
+                        "spiel meine musik ab",
+                        "spiel meine musik",
+                        "spiel meine playlist",
+                        "ich möchte meine duschplaylist hören",
+                        "ich will meine duschplaylist hören",
+                        "ich will meine duschplaylist",
+                        "ich will mit musik duschen",
+                        "ich möchte mit musik duschen",
+                        "ich möchte duschen mit musik",
+                        "ich möchte zum duschen musik hören",
+                        "ich möchte musik hören ",
+                        "ich will musik",
+                        "ich will musik hören",
+                        "ich heute musik hören zum duschen",
+                        "spiel musik ab",
+                        "spiel meine duschplaylist",
+                        "spiel meine playlist ab",
+                        "lieber duschplaylist",
+                        "ich möchte meine duschplaylist",
+                        "spiel meine duschplaylist ab",
+                        "musik",
+                        "playlist",
+                        "duschplaylist"
                     ]
                 },
                 {
-                    "name": "AMAZON.NoIntent",
-                    "samples": []
+                    "name": "ruhige_dusche",
+                    "slots": [],
+                    "samples": [
+                        "ich möchte heute entspannt und ruhig duschen",
+                        "ich möchte heute ruhig und entspannt duschen",
+                        "ich möchte heute ruhig duschen",
+                        "ich möchte heute entspannt duschen",
+                        "ich will heute entspannt und ruhig duschen",
+                        "entspannt und ruhig",
+                        "ruhig und entspannt",
+                        "ich will heute ruhig und entspannt duschen",
+                        "ich will heute entspannt duschen",
+                        "ich will heute ruhig duschen",
+                        "ich will heute leise duschen",
+                        "ich möchte heute leise duschen",
+                        "ruhige entspannt",
+                        "ich will eine entspannte ruhige duschen",
+                        "ich will eine ruhige entspannte duschen",
+                        "ich will ruhig duschen",
+                        "entspannte ruhige dusche",
+                        "ruhige entspannte dusche",
+                        "entspannt",
+                        "ruhig"
+                    ]
                 },
                 {
                     "name": "zaehneputzen",
@@ -161,6 +204,8 @@
                     "name": "funfact",
                     "slots": [],
                     "samples": [
+                        "erzähl mir einen funfact",
+                        "erzähle mir einen funfact",
                         "erzähle mir ein fun fact ",
                         "ich will einen funfact hören",
                         "ich möchte einen funfact",
@@ -232,6 +277,9 @@
                     "name": "unterbrechung",
                     "slots": [],
                     "samples": [
+                        "hör auf",
+                        "beenden",
+                        "schließen",
                         "stop",
                         "ciao",
                         "halt",
@@ -241,6 +289,18 @@
                         "fertig",
                         "tschüss"
                     ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "jap",
+                        "Jo",
+                        "Yes"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
                 },
                 {
                     "name": "AMAZON.NavigateHomeIntent",
