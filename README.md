@@ -1,4 +1,4 @@
-# Projektmodul Start: Team-07 Alexa Voice Skill "Morgenroutine"
+# Projektmodul Start: Team-07 Alexa Voice Skill "Mornify"
 ## Hochschule München: Informatik und Design 1 Semester 
 
 
