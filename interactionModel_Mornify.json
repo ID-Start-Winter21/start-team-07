@@ -31,11 +31,24 @@
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": []
+                    "samples": [
+                        "tschüss",
+                        "fertig",
+                        "beende meine morgenroutine",
+                        "ich bin fertig mit meiner morgenroutine",
+                        "halt",
+                        "ciao",
+                        "stop",
+                        "schließen",
+                        "beenden",
+                        "hör auf"
+                    ]
                 },
                 {
                     "name": "AMAZON.CancelIntent",
                     "samples": [
+                        "ich bin raus aus der dusche",
+                        "ich bin fertig",
                         "ich bin mit duschen fertig",
                         "ich bin aus der dusche raus",
                         "fertig geduscht",
@@ -201,7 +214,7 @@
                     ]
                 },
                 {
-                    "name": "funfact",
+                    "name": "fun_fact",
                     "slots": [],
                     "samples": [
                         "erzähl mir einen funfact",
@@ -220,6 +233,10 @@
                     "name": "aufgaben",
                     "slots": [],
                     "samples": [
+                        "was muss ich heute tun",
+                        "was muss ich heut erledigen",
+                        "meine aufgaben",
+                        "aufgaben",
                         "was muss ich heute alles erledigen",
                         "was muss ich heute alles machen",
                         "was muss ich heute erledigen",
@@ -271,23 +288,6 @@
                         "wetter",
                         "wie ist das wetter",
                         "wie wird das wetter heute"
-                    ]
-                },
-                {
-                    "name": "unterbrechung",
-                    "slots": [],
-                    "samples": [
-                        "hör auf",
-                        "beenden",
-                        "schließen",
-                        "stop",
-                        "ciao",
-                        "halt",
-                        "ich bin fertig",
-                        "ich bin fertig mit meiner morgenroutine",
-                        "beende meine morgenroutine",
-                        "fertig",
-                        "tschüss"
                     ]
                 },
                 {
