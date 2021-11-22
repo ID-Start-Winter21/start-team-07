@@ -49,10 +49,11 @@ Aplpha pre-release 0.2
 ## Probleme
 
 ### Momentane Bugs - 17.11.21 
-- Aufgaben Intent nicht abrufbar
-- man kann bisher noch nicht ohne Duschplaylist duschen
-- Befehl Stop geht nicht
-- Musik beim Zähne putzen geht nicht
-- Antwort_negativ Intent funktioniert nicht
+- [x] Aufgaben Intent nicht abrufbar
+- [ ] Man kann bisher noch nicht ohne Duschplaylist duschen
+- [x] Befehl Stop geht nicht
+- [ ] Musik beim Zähne putzen geht nicht
+- [x] Antwort_negativ Intent funktioniert nicht
+- [ ] Reihenfolge der möglichen Aktionen noch nicht definiert
 
 ## Quellen und Dank
