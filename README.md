@@ -3,13 +3,14 @@
 
 Willkommen zu unserem Mornify Repository!
 
-"Mornify" ist unser Alexa Skill, den wir im Rahmen unseres Projektmoduls im ersten Semester erstellen.
+"Mornify" ist unser Alexa Skill, den wir im Rahmen unseres Projektmoduls im ersten Semester erstellen sollen.
 Hier dokumentieren wir den Verlauf und Fortschritt unseres ganzen Projekts.
 
+Wer kennt es nicht? Der Start in den Tag ist hektisch und unkoordieniert,
 Am 10. Dezember 2021 zwischen 15.00 und 16.30 Uhr präsentieren wir den Zwischenstand unsere Arbeit auf dem Hi!A Festival.
 
-## Unser Team
-
+## Über uns
+### Teammitglieder
 - [Sophie Schmitz](https://github.com/sophieschmitz)
 - [Amir Al Nahawandi](https://github.com/xSilentStorm313)
 - [Marina Oroz](https://github.com/marinaoroz)
