@@ -1,12 +1,14 @@
 # Projektmodul Start: Team-07 Alexa Voice Skill "Mornify"
 ## Hochschule München: Informatik und Design 1 Semester 
 
+Willkommen zu unserem Mornify Repository!
 
-## Aufgabenstellung  
+"Mornify" ist unser Alexa Skill, den wir im Rahmen unseres Projektmoduls im ersten Semester erstellen.
+Hier dokumentieren wir den Verlauf und Fortschritt unseres ganzen Projekts.
 
-Thema des Projektmoduls der Studierenden im ersten Semester lautet ‚Designing Voice User Interfaces‘. Die Studierenden werden Prototypen bauen, mit denen Menschen per Sprache interagieren. Die Ergebnisse der studentischen Arbeiten möchten wir am 10. Dezember 2021 zwischen 15 und 16:30 Uhr Interessierten präsentieren und einladen die Voice Apps (Sprachanwendungen) der Studierenden interaktiv auszuprobieren.
+Am 10. Dezember 2021 zwischen 15.00 und 16.30 Uhr präsentieren wir den Zwischenstand unsere Arbeit auf dem Hi!A Festival.
 
-## Teammitglieder 
+## Unser Team
 
 - [Sophie Schmitz](https://github.com/sophieschmitz)
 - [Amir Al Nahawandi](https://github.com/xSilentStorm313)
@@ -21,39 +23,7 @@ Der Skill wird mit einer Kamera verbunden, welche durch Gesichtserkennung den in
 
 Die Besucher des Festivals können sich vor den Spiegel stellen, mit den default Einstellungen den Skill starten und all unsere Funktionen selbst erleben oder von unserem Team live vorgeführt bekommen. Wir eröffnen den Leuten auf dem Festival eine ganz neue Perpektive von Alexa Skills, besonders wie schön der Start in den Tag mit Alexa doch sein kann, wenn er sonst oft so hektisch und ungeordnet ist.
 
-## Updates 
-
-Aplpha pre-release 0.2
-
 ## Storyboard
 ![storyboard](https://user-images.githubusercontent.com/91656601/142069310-7de448bd-45f0-4107-8cad-5628822a7b46.png)
-
-## To-Dos 
-- [x] Einsatzmöglichkeiten für die Kamera überlegen bis 15.11
-- [x] Readme Verbessern und schöner gestalten 
-- [x] Name für den Skill überlegen bis 18.11
-- [ ] Kamera einstellen und mit der Gesichtserkennung’s Software verknüpfen
-- [ ] Alexa mit Kamera verbinden 
-- [ ] Überlegen wie wir den Skill sympathischer gestalten können
-- [x] Skill Icons erstellen bis 18.11
-- [ ] Voiceflow verbessern 
-- [ ] Fehler in Code ausbessern
-- [x] Readme Verbessern und schöner gestalten 
-- [x] Konzept in Github schreiben bis 18.11 
-- [x] Storyboard erstellen bis 18.11 24 Uhr 
-- [x] Voiceflow Model in der Developer Console als code festlegen (versuch morgen das zu erledigen) 15.11
-- [x] Links an TechNinja gesendet - Antwort schon erhalten, Montag wird das mit der Socher besprochen
-- [x] Voiceflow fertigstellen bis 15.11
-
-
-## Probleme
-
-### Momentane Bugs - 22.11.21 
-- [x] Aufgaben Intent nicht abrufbar
-- [ ] Man kann bisher noch nicht ohne Duschplaylist duschen
-- [x] Befehl Stop geht nicht
-- [ ] Musik beim Zähne putzen geht nicht
-- [x] Antwort_negativ Intent funktioniert nicht
-- [ ] Reihenfolge der möglichen Aktionen noch nicht definiert
 
 ## Quellen und Dank
