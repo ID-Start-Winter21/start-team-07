@@ -6,8 +6,10 @@ Willkommen zu unserem Mornify Repository!
 "Mornify" ist unser Alexa Skill, den wir im Rahmen unseres Projektmoduls im ersten Semester erstellen sollen.
 Hier dokumentieren wir den Verlauf und Fortschritt unseres ganzen Projekts.
 
-Wer kennt es nicht? Der Start in den Tag ist hektisch und unkoordieniert,
-Am 10. Dezember 2021 zwischen 15.00 und 16.30 Uhr präsentieren wir den Zwischenstand unsere Arbeit auf dem Hi!A Festival.
+Wer kennt es nicht? Der Start in den Tag ist hektisch, unkoordieniert und durcheinander. Bei diesem Problem soll unser Alexa Skill helfen.
+Mit unserem Skill begleitet Alexa dich jeden Morgen im Bad und bringt eine Routine rein, damit dein Morgen geordnet und ohne Stress verläuft, denn ein guter Start in den Tag ist mit das wichtigste, damit es auch ein guter Tag wird.
+
+Am 10. Dezember 2021 zwischen 15.00 und 16.30 Uhr präsentieren wir den Zwischenstand unserer Arbeit auch auf dem Hi!A Festival.
 
 ## Über uns
 ### Teammitglieder
