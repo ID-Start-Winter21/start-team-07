@@ -21,5 +21,3 @@ Am 10. Dezember 2021 zwischen 15.00 und 16.30 Uhr präsentieren wir den Zwischen
 
 ## Storyboard
 ![storyboard](https://user-images.githubusercontent.com/91656601/142069310-7de448bd-45f0-4107-8cad-5628822a7b46.png)
-
-## Quellen und Dank
