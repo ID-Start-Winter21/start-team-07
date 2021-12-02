@@ -92,7 +92,7 @@ class duschenHandler(AbstractRequestHandler):
         return (
             handler_input.response_builder
                 .speak(speak_output)
-                .ask("Sage mir einfach ob du mit deiner Playlist duschen möchtest oder heute vielleicht in ruhe duschen möchtest")
+                .ask("Möchtest du, dass du deine Duschplaylist abspiele oder willst du eine ruhige Dusche?")
                 .response
         )        
 
@@ -122,7 +122,7 @@ class weiter_duschenHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Alles klar. Die Wasserrechnung diesen Monat wird aber ganz schön teuer." '<audio src="https://morgenroutine.s3.amazonaws.com/RPReplay_Final1638197530.mp3"/>' "Super. Wir sind fertig geduscht. Wie möchtest du nun fortfahren?"
+        speak_output = "Alles klar. Die Wasserrechnung diesen Monat wird aber ganz schön teuer." '<audio src="https://morgenroutine.s3.amazonaws.com/audio+mit+ton.mp3"/>' "Super jetzt sind wir frisch geduscht und du stinkst endlich nicht mehr, wie möchtest du weitermachen?" #2teil von der Audio @sophie
 
         return (
             handler_input.response_builder
@@ -131,15 +131,15 @@ class weiter_duschenHandler(AbstractRequestHandler):
                 .response
         )
 
-class duschen_stoppenHandler(AbstractRequestHandler):
+class dusche_stoppenHandler(AbstractRequestHandler):
     """Handler for duschplaylist."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("duschen_stoppen")(handler_input)
+        return ask_utils.is_intent_name("dusche_stoppen")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Alles klar. Die Wasserrechnung diesen Monat wird aber ganz schön teuer." + '<audio src="https://morgenroutine.s3.amazonaws.com/RPReplay_Final1638197530.mp3"/>' 
+        speak_output = "Sehr vorbildlich, jetzt stinkst du nicht mehr. Wie möchtest du weitermachen?"
 
         return (
             handler_input.response_builder
@@ -223,7 +223,7 @@ class wetterHandler(AbstractRequestHandler):
             weather_json = "Windig"
         temp_json = round(json_data['main']['temp'] )
         city = "München"
-        speak_output = "Aktuell ist es {} und die Temperatur beträgt {} °C in {}. " .format(weather_json, temp_json, city)
+        speak_output = "Aktuell ist es {} und die Temperatur beträgt {} °C in {}. Wie sollen wir fortfahren? " .format(weather_json, temp_json, city)
         reprompt = "Möchtest du nochmal das Wetter abfragen?"
         handler_input.response_builder
         
@@ -259,16 +259,16 @@ class fun_factHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = random.choice(["Wusstest du, dass der Uranus 70 Jahre lang Georg hieß? Witzig oder?", 
-                                    "Würde ein Baby jedes Jahr im selben Tempo weiterwachsen wie in seinem ersten Lebensjahr, wäre es an seinem 18. Geburtstag ungefähr 5 Meter groß." , 
-                                    "Jeder sechste deutsche Arzt der inneren Medizin wurde schon mindestens einmal von einem Patienten verprügelt.", 
-                                    "Otter legen sich zum Schlafen auf den Rücken und halten dabei Händchen. Damit sorgen sie dafür, dass sie im Wasser nicht voneinander wegtreiben,Wie niedlich, oder ",
-                                    "Wusstest du, dass Hippopotamomonstrosesquipedaliophobie der offizielle Name für die Angst vor langen Wörtern ist?. Ironisch, oder nicht",
-                                    "Wusstest du, dass Sommerloch, Katzenhirn und Langweiler echt Orte in Deutschland sich?",
-                                    "Die Royals haben einige merkwürdige Regeln zu befolgen. Unter anderem ist es den Mitgliedern des britischen Königshauses nicht erlaubt, Monopoly zu spielen, da das Spiel zu viel Potenzial für Streit birgt.",
-                                    "Koalas bekommen Schluckauf, wenn sie gestresst sind. Manchmal beginnen sie dann sogar, zusätzlich nervös mit den Ohren zu wackeln. Warum sie das tun, ist bisher nicht erforscht.",
-                                    "Ein lustiges Gesetz: In der amerikanischen Stadt Daytona ist es verboten, Mülltonnen sexuell zu belästigen.",
-                                    "Wusstest du, dass es in Frankreich verboten ist, Schweine Napoleon zu nennen?"])
+        speak_output = random.choice(["Wusstest du, dass der Uranus 70 Jahre lang Georg hieß? Witzig oder? Was möchtest du nun tun?", 
+                                    "Würde ein Baby jedes Jahr im selben Tempo weiterwachsen wie in seinem ersten Lebensjahr, wäre es an seinem 18. Geburtstag ungefähr 5 Meter groß. Sehr interessant, oder? Was möchtest du nun tun?" , 
+                                    "Jeder sechste deutsche Arzt der inneren Medizin wurde schon mindestens einmal von einem Patienten verprügelt. Krass oder? Was möchtest du nun tun?", 
+                                    "Otter legen sich zum Schlafen auf den Rücken und halten dabei Händchen. Damit sorgen sie dafür, dass sie im Wasser nicht voneinander wegtreiben. Wie niedlich, oder? Was möchtest du nun tun?",
+                                    "Wusstest du, dass Hippopotamomonstrosesquipedaliophobie der offizielle Name für die Angst vor langen Wörtern ist?. Ironisch, oder nicht? Was möchtest du nun tun?",
+                                    "Wusstest du, dass Sommerloch, Katzenhirn und Langweiler echt Orte in Deutschland sich? Wie lustig, oder? Was möchtest du nun tun?",
+                                    "Die Royals haben einige merkwürdige Regeln zu befolgen. Unter anderem ist es den Mitgliedern des britischen Königshauses nicht erlaubt, Monopoly zu spielen, da das Spiel zu viel Potenzial für Streit birgt. Echt interessant oder? Was möchtest du nun tun?",
+                                    "Koalas bekommen Schluckauf, wenn sie gestresst sind. Manchmal beginnen sie dann sogar, zusätzlich nervös mit den Ohren zu wackeln. Warum sie das tun, ist bisher nicht erforscht. Witzig oder? Was möchtest du nun tun?",
+                                    "Ein lustiges Gesetz: In der amerikanischen Stadt Daytona ist es verboten, Mülltonnen sexuell zu belästigen. Ein sehr komisches Gesetz oder? Was möchtest du nun tun?",
+                                    "Wusstest du, dass es in Frankreich verboten ist, Schweine Napoleon zu nennen? Wahnsinn oder? Was möchtest du nun tun?"])
 
         return (
             handler_input.response_builder
@@ -285,12 +285,11 @@ class HelpIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Eigentlich kann ich garnichts. Mit diesen Optionen kann ich dir behilflich sein: Ich kann dein Patner beim Zähne putzen oder auch beim Duschen sein. Außerdem kann ich dir die heutigen Nachrichten vorlesen, den Wetterbericht sagen, Funfacts erzählen oder dir deine Aufgaben für heute nennen. "
-        reprompt_text = "Wie möchtest du deine Morgenroutine fortfahren?"
+        speak_output = "Mit diesen Optionen kann ich dir behilflich sein: Ich kann dein Patner beim Zähne putzen oder auch beim Duschen sein. Außerdem kann ich dir die heutigen Nachrichten vorlesen, den Wetterbericht sagen, Funfacts erzählen oder dir deine Aufgaben für heute nennen. Mit was kann ich dir nun behilflich sein?"
         return (
             handler_input.response_builder
                 .speak(speak_output)
-                .ask(reprompt_text)
+                .ask(speak_output)
                 .response
         )
 
@@ -322,11 +321,12 @@ class fertig_duschenHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = ""
+        speak_output = "Super jetzt sind wir frisch geduscht und du stinkst endlich nicht mehr, wie möchtest du weitermachen?"
 
         return (
             handler_input.response_builder
                 .speak(speak_output)
+                .ask(speak_output)
                 .response
         )
 
@@ -450,7 +450,7 @@ sb.add_request_handler(antwort_negativHandler())
 sb.add_request_handler(duschenHandler())
 sb.add_request_handler(duschplaylistHandler())
 sb.add_request_handler(weiter_duschenHandler())
-sb.add_request_handler(duschen_stoppenHandler())
+sb.add_request_handler(dusche_stoppenHandler())
 sb.add_request_handler(ruhige_duscheHandler())
 sb.add_request_handler(zaehneputzenHandler())
 sb.add_request_handler(fun_factHandler())
