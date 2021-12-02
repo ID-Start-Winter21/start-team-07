@@ -1,0 +1,72 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Wir erstellen einen personalisierten Alexa Morgenroutine Skill der Spaß, Freude und Motivation in jeden Morgen bringt.",
+          "examplePhrases": [
+            "Alexa, öffne Mornify",
+            "Alexa, starte Mornify"
+          ],
+          "keywords": [
+            "Morgenroutine",
+            "Mornify",
+            "Früh",
+            "Morgen",
+            "Routine",
+            "Aufstehen"
+          ],
+          "name": "Mornify",
+          "description": "Eine Morgenroutine stellt die Weiche für einen guten Tag: Bewusst gestaltet, sorgt sie für mehr Konzentration, Energie und Fröhlichkeit. Das funktioniert auch, wenn du nur wenig Zeit aufwenden kannst. Deshalb haben wir uns als Gruppe überlegt einen Alexa Interaction Skill zu erstellen, der \"Mornify\" heißt. Dieser gibt dem Benutzer die Möglichkeit mit seiner persönlichen Morgenroutine seinen Tag strukturierter zu gestalten.\nDer Skill wird mit einer Kamera verbunden, welche durch Gesichtserkennung den individuellen Benutzer erkennt und die zuvor eingegebenen Einstellungen zu diesem abrufen kann. Die Kamera wird hinter dem Spiegel installiert und ist somit nicht sichtbar. Funktionen, wie zum Beispiel Zähneputzen, helfen dem Benutzer die empfohlenen drei Minuten einzuhalten und zeitgleich seine Lieblings-Musik zu hören. Unser Skill begleitet den User auch mit in die Dusche ;). Die Funktion \"Duschplaylist\" startet die persönliche Playlist des Benutzers während des Duschens. Sie gibt ihm ein Zeitgefühl, wie lange er sich schon in der Dusche befindet. Der Alexa Skill kann außerdem die heutigen Nachrichten, das Wetter oder auch Funfacts vorlesen. Die persöhnlichen Aufgaben und Termine für den Tag, kann der Skill einem auch nennen. Der Benutzer kann somit super informiert und gut gelaunt in den Tag starten.",
+          "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
+          "updatesDescription": "",
+          "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:836059380224:function:bc54b45d-a4b3-4d07-9be1-b1f0b5a9dd3b:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:836059380224:function:bc54b45d-a4b3-4d07-9be1-b1f0b5a9dd3b:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:836059380224:function:bc54b45d-a4b3-4d07-9be1-b1f0b5a9dd3b:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:836059380224:function:bc54b45d-a4b3-4d07-9be1-b1f0b5a9dd3b:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "de-DE": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}

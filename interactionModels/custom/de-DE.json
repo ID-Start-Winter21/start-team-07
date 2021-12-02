@@ -1,0 +1,819 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "öffne mornify",
+      "intents": [
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "mit was kannst du mir helfen",
+            "wobei kannst du mir alles helfen",
+            "bei was kannst du mir alles helfen",
+            "bei was kannst du mir helfen ",
+            "wobei kannst du mir helfen",
+            "was kannst du alles machen",
+            "sag mir alle meine optionen",
+            "sag mir meine optionen",
+            "sage mir alle meine optionen",
+            "nenne mir alle meine optionen",
+            "nenne mir deine fähigkeiten",
+            "nenne mir deine funktionen",
+            "nenne mir deine optionen",
+            "nenne mir die fähigkeiten",
+            "nenne mir die funktionen",
+            "nenne mir die optionen",
+            "nenne mir alle optionen",
+            "nenne mir alle fähigkeiten",
+            "nenne mir alle funktionen",
+            "was sind die fähigkeiten",
+            "was sind deine fähigkeiten",
+            "was kann ich alles machen",
+            "was sind meine möglichkeiten",
+            "was hab ich alles für optionen",
+            "was hast du alles für optionen",
+            "was hast du alles für funktionen",
+            "was kannst du alles",
+            "hilf mir",
+            "hilfe",
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "mornify fertig",
+            "mornify schließen",
+            "mornify stop",
+            "mornify beenden",
+            "skill beenden",
+            "beende den skill",
+            "reicht für heute",
+            "genug für heute",
+            "Schluss für heute",
+            "aus",
+            "schluss",
+            "fertig für heute",
+            "anhalten",
+            "aufhören",
+            "zu ende",
+            "ende",
+            "ich bin fertig mit der morgenroutine",
+            "ich bin fertig mit meiner heutigen morgenroutine",
+            "ich bin fertig für heute",
+            "morgenroutine abgeschlossen",
+            "morgenroutine schließen",
+            "morgenroutine beenden",
+            "tschüss",
+            "beende meine morgenroutine",
+            "ich bin fertig mit meiner morgenroutine",
+            "halt",
+            "ciao",
+            "stop",
+            "schließen",
+            "hör auf"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "antwort_positiv",
+          "slots": [
+            {
+              "name": "positives",
+              "type": "positives"
+            }
+          ],
+          "samples": [
+            "sehr {positives} und selbst",
+            "ganz {positives} und selbst",
+            "{positives} und selbst",
+            "sehr {positives} und selber",
+            "ganz {positives} und selber",
+            "{positives} und selber",
+            "sehr {positives} selber",
+            "ganz {positives} selber",
+            "{positives} selber",
+            "sehr {positives} und dir",
+            "ganz {positives} und dir",
+            "{positives} und dir",
+            "sehr {positives} selbst",
+            "ganz {positives} selbst",
+            "{positives} selbst",
+            "sehr {positives} dir",
+            "ganz {positives} dir",
+            "{positives} dir",
+            "mir gehts ganz {positives}",
+            "mir gehts sehr {positives}",
+            "mir gehts {positives}",
+            "mir geht es ganz {positives}",
+            "mir geht es sehr {positives}",
+            "mir geht es {positives}",
+            "ganz {positives}",
+            "sehr {positives}",
+            "{positives}"
+          ]
+        },
+        {
+          "name": "antwort_negativ",
+          "slots": [
+            {
+              "name": "negatives",
+              "type": "negatives"
+            },
+            {
+              "name": "neutral",
+              "type": "neutral"
+            }
+          ],
+          "samples": [
+            "ganz {negatives}",
+            "ganz {neutral}",
+            "mega {negatives}",
+            "{negatives} {negatives}",
+            "ich bin sehr {negatives} gelaunt",
+            "ich bin sehr {negatives}",
+            "mir geht es sehr {negatives}",
+            "mir gehts sehr {negatives}",
+            "sehr {negatives}",
+            "ist {neutral}",
+            "ich bin {negatives} gelaunt",
+            "ich bin {negatives}",
+            "so {neutral}",
+            "{neutral} {neutral}",
+            "ja {neutral}",
+            "ja es {neutral}",
+            "{neutral} passt schon",
+            "{neutral} mir gehts {negatives}",
+            "{neutral} {negatives}",
+            "mir geht es {negatives}",
+            "{negatives}",
+            "{neutral}"
+          ]
+        },
+        {
+          "name": "duschplaylist",
+          "slots": [],
+          "samples": [
+            "ich möchte meine musik hören",
+            "ich möchte meine playlist hören",
+            "ich will musik hören beim duschen",
+            "ich will musik zum duschen",
+            "spiel playlist",
+            "spiel musik",
+            "spiel meine musik ab",
+            "spiel meine musik",
+            "spiel meine playlist",
+            "ich möchte meine duschplaylist hören",
+            "ich will meine duschplaylist hören",
+            "ich will meine duschplaylist",
+            "ich will mit musik duschen",
+            "ich möchte mit musik duschen",
+            "ich möchte duschen mit musik",
+            "ich möchte zum duschen musik hören",
+            "ich möchte musik hören ",
+            "ich will musik",
+            "ich will musik hören",
+            "ich heute musik hören zum duschen",
+            "spiel musik ab",
+            "spiel meine duschplaylist",
+            "spiel meine playlist ab",
+            "lieber duschplaylist",
+            "ich möchte meine duschplaylist",
+            "spiel meine duschplaylist ab",
+            "musik",
+            "playlist",
+            "duschplaylist"
+          ]
+        },
+        {
+          "name": "ruhige_dusche",
+          "slots": [],
+          "samples": [
+            "ich möchte meine ruhe genießen beim duschen",
+            "ich möchte meine ruhe",
+            "ich will stille beim duschen",
+            "ich will stille",
+            "stille",
+            "ich will leise duschen",
+            "ich will meine ruhe beim duschen",
+            "entspannung",
+            "ruhe",
+            "ich will ruhe",
+            "ich will keine duschplaylist",
+            "ich will keine musik hören",
+            "ich will keine musik",
+            "keine musik",
+            "ich möchte heute entspannt und ruhig duschen",
+            "ich möchte heute ruhig und entspannt duschen",
+            "ich möchte heute ruhig duschen",
+            "ich möchte heute entspannt duschen",
+            "ich will heute entspannt und ruhig duschen",
+            "entspannt und ruhig",
+            "ruhig und entspannt",
+            "ich will heute ruhig und entspannt duschen",
+            "ich will heute entspannt duschen",
+            "ich will heute ruhig duschen",
+            "ich will heute leise duschen",
+            "ich möchte heute leise duschen",
+            "ruhige entspannt",
+            "ich will eine entspannte ruhige duschen",
+            "ich will eine ruhige entspannte duschen",
+            "ich will ruhig duschen",
+            "entspannte ruhige dusche",
+            "ruhige entspannte dusche",
+            "entspannt",
+            "ruhig"
+          ]
+        },
+        {
+          "name": "zaehneputzen",
+          "slots": [],
+          "samples": [
+            "lass uns jetzt zähne putzen",
+            "ich möchte jetzt zähne putzen",
+            "ich will zähne putzen jetzt",
+            "ich will jetzt zähne putzen",
+            "ich will jetzt meine zähne putzen",
+            "ich will anfangen damit meine zähne zu putzen",
+            "damit meine zähne zu putzen",
+            "mit zähne putzen will ich anfangen",
+            "ich würde gern zähne putzen",
+            "spiele meine musik fürs zähne putzen",
+            "spiele meine zahnputz musik",
+            "starte meine zahnputz musik",
+            "starte meinen musik timer fürs zähne putzen",
+            "stelle meine musiktimer fürs zähne putzen",
+            "musiktimer fürs zähne putzen",
+            "starte das zähne putzen",
+            "lass uns starten mit zähne putzen",
+            "lass uns mit zähne putzen beginnen",
+            "lass uns mit zähne putzen starten",
+            "lass uns mit zähne putzen anfangen",
+            "lass uns zähne putzen",
+            "putzen wir zähne",
+            "ich möchte zähne putzen",
+            "lass uns zähneputzen",
+            "starten wir mit zähne putzen",
+            "fangen wir an mit zähne putzen",
+            "fangen wir mit dem zähne putzen an",
+            "ich würde gerne zähne putzen",
+            "ich möchte damit starten meine zähne zu putzen",
+            "ich möchte meine morgenroutine it zähneputzen starten",
+            "mit zähneputzen",
+            "ich möchte zähneputzen",
+            "zähne putzen",
+            "ich will zähne putzen"
+          ]
+        },
+        {
+          "name": "duschen",
+          "slots": [],
+          "samples": [
+            "ich will mit duschen anfangen",
+            "ich geh erstmal unter die dusche",
+            "ich geh jetzt unter die dusche",
+            "ich steig erstmal unter die dusche",
+            "ich steig jetzt unter die dusche",
+            "ich steig unter die dusche",
+            "ich gehe erstmal in die dusche",
+            "ich geh erstmal duschen",
+            "ich dusche jetzt",
+            "ich dusche jetzt erstmal",
+            "ich möchte jetzt in die dusche",
+            "ich geh jetzt in die dusche",
+            "ich geh jetzt duschen",
+            "ich gehe jetzt in die dusche",
+            "duschen gehen",
+            "dusche",
+            "mit duschen gehen",
+            "ich gehe jetzt duschen",
+            "ich würde jetzt duschen gehen",
+            "ich würde jetzt duschen",
+            "gehen wir duschen",
+            "ich möchte jetzt duschen gehen",
+            "ich möchte jetzt duschen",
+            "ich möchte nun duschen",
+            "ich will jetzt duschen",
+            "lass uns duschen",
+            "ich gehe erstmal duschen",
+            "ich gehe duschen",
+            "ich geh duschen",
+            "mit duschen",
+            "duschen",
+            "ich möchte duschen gehen",
+            "ich will duschen gehen",
+            "ich möchte duschen",
+            "ich will duschen"
+          ]
+        },
+        {
+          "name": "fun_fact",
+          "slots": [],
+          "samples": [
+            "erzähl mir funfacts",
+            "sag mir funfacts",
+            "funfacts",
+            "nun einen funfact",
+            "jetzt einen funfact",
+            "erst ein funfact",
+            "jetzt ein funfact",
+            "funfact jetzt",
+            "fun fact",
+            "erstmal ein funfact",
+            "erst einen funfact",
+            "zuerst ein funfact",
+            "zuerst einen funfact",
+            "erstmal einen funfact",
+            "sag mir erstmal einen funfact",
+            "sag mir nun einen funfact ",
+            "sag mir jetzt einen funfact",
+            "sage mir erstmal einen funfact",
+            "sage mir jetzt einen funfact",
+            "erzähl mir nun einen funfact",
+            "erzähl mir jetzt einen funfact",
+            "ich will jetzt einen funfact",
+            "ich möchte erstmal eine funfact hören",
+            "ich möchte erstmal einen funfact",
+            "ich will nun einen funfact hören",
+            "ich will jetzt einen funfact hören",
+            "erzähl mir einen funfact",
+            "erzähle mir einen funfact",
+            "erzähle mir ein fun fact ",
+            "ich will einen funfact hören",
+            "ich möchte einen funfact",
+            "ich will einen funfact",
+            "ich möchte einen funfact hören",
+            "sag mir einen funfact",
+            "funfact",
+            "nenne mir einen funfact"
+          ]
+        },
+        {
+          "name": "aufgaben",
+          "slots": [],
+          "samples": [
+            "was steht in meinem terminkalender für heute an",
+            "was steht in meinem kalender für heute an",
+            "was steht für heute an ",
+            "was steht in meinen terminkalender",
+            "was ist heute in meinem terminkalender",
+            "was steht heute alle an",
+            "was steht heute auf dem plan",
+            "sage mir alle meine termine für heute",
+            "nenne mir alle meine heutigen termine",
+            "nenne mir alle termine für heute",
+            "nenne mir alle meine termine",
+            "sag mir meine heutigen termine",
+            "was sind meine termine für heute",
+            "was muss ich heute noch alles erledigen",
+            "was muss ich heute noch machen",
+            "was sind meine aufgaben",
+            "was muss ich heute tun",
+            "was muss ich heut erledigen",
+            "meine aufgaben",
+            "aufgaben",
+            "was muss ich heute alles erledigen",
+            "was muss ich heute alles machen",
+            "was muss ich heute erledigen",
+            "was muss ich heute machen",
+            "gibt es heute was zu erledigen ",
+            "muss ich heute was erledigen",
+            "was steht heute an",
+            "Steht heute was an",
+            "sage mir meine heutigen aufgaben",
+            "was sind meine aufgaben für heute",
+            "öffne meine Aufgaben",
+            "to do liste",
+            "öffne to do liste",
+            "öffne meine to do liste"
+          ]
+        },
+        {
+          "name": "nachrichten",
+          "slots": [],
+          "samples": [
+            "lese mir die heutigen nachrichten bitte vor",
+            "lese mir die nachrichten bitte vor ",
+            "heutige nachrichten bitte",
+            "nachrichten von heute bitte",
+            "lese mir nun die heutigen nachrichten vor",
+            "lese mir jetzt die heutigen nachrichten vor",
+            "ich will nun die heutigen nachrichten hören",
+            "ich will die heutigen nachrichten hören",
+            "ich möchte nun die heutigen nachrichten hören",
+            "ich möchte jetzt die heutigen nachrichten hören",
+            "ich will jetzt die heutigen nachrichten hören",
+            "ich möchte jetzt die nachrichten von heute hören",
+            "ich möchte jetzt die nachrichten hören",
+            "ich will jetzt die nachrichten hören",
+            "sage mir nur die nun die nachrichten",
+            "sage mir die aktuellen nachrichten",
+            "nachrichten aktuelle",
+            "aktuelle nachrichten",
+            "ich will jetzt due aktuellen nachrichten hören",
+            "ich will jetzt die nachrichten von heute hören",
+            "ich will jetzt nachrichten hören",
+            "ich würde jetzt gerne die nachrichten hören",
+            "ich möchte jetzt gern die nachrichten hören",
+            "ich möchte die heutigen nachrichten hören",
+            "ich möchte die nachrichten von heute hören",
+            "ich möchte die nachrichten hören",
+            "nenne mir die nachrichten von heute",
+            "nenne mir die heutige nachrichten",
+            "nenne mir die nachrichten",
+            "heutige nachrichten",
+            "lese mir die nachrichten von heute vor",
+            "nachrichten von heute",
+            "ich will die nachrichten hören",
+            "nachrichten",
+            "lese mir die heutigen nachrichten vor"
+          ]
+        },
+        {
+          "name": "wetter",
+          "slots": [],
+          "samples": [
+            "was wird heute für ein wetter sein",
+            "waas wird heute für ein wetter",
+            "wie wird das wetter heute sein",
+            "wie ist das wetter jetzt",
+            "wie ist das wetter gerade",
+            "wie ist das wetter momentan",
+            "wetter grade eben ",
+            "wetter grade",
+            "wie viel grad",
+            "wie ist das wetter grade",
+            "wie wird das wetter",
+            "wie ist das wetter heute",
+            "sage mir das heutige wetter bitte",
+            "sage mir das wetter von heute bitte",
+            "sage mir das heutige wetter",
+            "sage mir das wetter von heute",
+            "heutiges wetter bitte",
+            "heutiges wetter",
+            "wetter heute bitte",
+            "wetter heute",
+            "wetterbericht bitte",
+            "wetter von heute bitte",
+            "wetter bitte",
+            "wie viel grad hat es gerade",
+            "wie viel grad hat es",
+            "sag mir das wetter ",
+            "wetterbericht",
+            "sag mir den wetterbericht",
+            "wetter",
+            "wie ist das wetter",
+            "wie wird das wetter heute"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "jap",
+            "Jo",
+            "Yes"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "nö",
+            "ne",
+            "nope",
+            "nein"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "fertig_duschen",
+          "slots": [],
+          "samples": [
+            "fertig mit dusche",
+            "dusche fertig",
+            "bin fertig mit der dusche",
+            "bin aus der dusche raus",
+            "fertig dusche",
+            "fertig",
+            "bin fertig",
+            "bin raus aus der dusche",
+            "bin fertig geduscht",
+            "bin fertig mit duschen",
+            "ich bin aus der dusche raus",
+            "ich bin raus aus der dusche",
+            "ich bin fertig mit duschen",
+            "fertig geduscht",
+            "ich bin fertig"
+          ]
+        },
+        {
+          "name": "weiter_duschen",
+          "slots": [],
+          "samples": [
+            "weiterduschen",
+            "weiter playlist",
+            "trotzdem weiter",
+            "trotzdem weiter duschen",
+            "ich möchte trotzdem weiter duschen",
+            "ich möchte weiter duschen",
+            "ich will weiter duschen",
+            "musik weiter",
+            "playlist weiter",
+            "weiter",
+            "dusche weiter",
+            "weiter duschen"
+          ]
+        },
+        {
+          "name": "dusche_stoppen",
+          "slots": [],
+          "samples": [
+            "beende musik",
+            "beende playlist",
+            "playlist beenden",
+            "musik beenden",
+            "playlist aus",
+            "musik aus",
+            "beenden",
+            "musik aufhören",
+            "playlist aufhören",
+            "stop playlist",
+            "stop musik",
+            "stoppe playlist",
+            "stoppe musik",
+            "stoppe meine musik",
+            "stoppe meine playlist",
+            "playlist stop",
+            "musik stop",
+            "musik stoppen",
+            "stoppen",
+            "playlist stoppen"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "erstklassig"
+              }
+            },
+            {
+              "name": {
+                "value": "ausgezeichnet"
+              }
+            },
+            {
+              "name": {
+                "value": "passt alles"
+              }
+            },
+            {
+              "name": {
+                "value": "spitze"
+              }
+            },
+            {
+              "name": {
+                "value": "mega"
+              }
+            },
+            {
+              "name": {
+                "value": "supidupi"
+              }
+            },
+            {
+              "name": {
+                "value": "besser könnte es nicht sein"
+              }
+            },
+            {
+              "name": {
+                "value": "besser gehts nicht"
+              }
+            },
+            {
+              "name": {
+                "value": "perfekt"
+              }
+            },
+            {
+              "name": {
+                "value": "toll"
+              }
+            },
+            {
+              "name": {
+                "value": "ganz toll"
+              }
+            },
+            {
+              "name": {
+                "value": "super"
+              }
+            },
+            {
+              "name": {
+                "value": "sehr gut"
+              }
+            },
+            {
+              "name": {
+                "value": "gut",
+                "synonyms": [
+                  "good"
+                ]
+              }
+            }
+          ],
+          "name": "positives"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "genervt"
+              }
+            },
+            {
+              "name": {
+                "value": "traurig"
+              }
+            },
+            {
+              "name": {
+                "value": "schlimm"
+              }
+            },
+            {
+              "name": {
+                "value": "katstrophal"
+              }
+            },
+            {
+              "name": {
+                "value": "grottig"
+              }
+            },
+            {
+              "name": {
+                "value": "scheise"
+              }
+            },
+            {
+              "name": {
+                "value": "beschissen"
+              }
+            },
+            {
+              "name": {
+                "value": "miserabel"
+              }
+            },
+            {
+              "name": {
+                "value": "garnicht gut"
+              }
+            },
+            {
+              "name": {
+                "value": "nicht so gut"
+              }
+            },
+            {
+              "name": {
+                "value": "nicht gut"
+              }
+            },
+            {
+              "name": {
+                "value": "sehr schlecht"
+              }
+            },
+            {
+              "name": {
+                "value": "schlecht"
+              }
+            }
+          ],
+          "name": "negatives"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "müde"
+              }
+            },
+            {
+              "name": {
+                "value": "nicht berauschend"
+              }
+            },
+            {
+              "name": {
+                "value": "ganz oke"
+              }
+            },
+            {
+              "name": {
+                "value": "ziemlich gut"
+              }
+            },
+            {
+              "name": {
+                "value": "lala"
+              }
+            },
+            {
+              "name": {
+                "value": "so lala"
+              }
+            },
+            {
+              "name": {
+                "value": "mittelmäßg"
+              }
+            },
+            {
+              "name": {
+                "value": "okay"
+              }
+            },
+            {
+              "name": {
+                "value": "okey"
+              }
+            },
+            {
+              "name": {
+                "value": "oke"
+              }
+            },
+            {
+              "name": {
+                "value": "relativ gut"
+              }
+            },
+            {
+              "name": {
+                "value": "einigermaßen gut"
+              }
+            },
+            {
+              "name": {
+                "value": "passt"
+              }
+            },
+            {
+              "name": {
+                "value": "geht"
+              }
+            },
+            {
+              "name": {
+                "value": "geht schon"
+              }
+            },
+            {
+              "name": {
+                "value": "passt schon"
+              }
+            },
+            {
+              "name": {
+                "value": "geht so"
+              }
+            },
+            {
+              "name": {
+                "value": "naja"
+              }
+            }
+          ],
+          "name": "neutral"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "27"
+}
