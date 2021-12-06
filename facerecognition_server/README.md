@@ -39,6 +39,11 @@ Open a shell and:
 ```
 ngrok http localhost:5000
 ```
+**Beware: On a Mac, sometimes localhost doesn't work (I don't know why, yet!). The response will be a ```403 forbidden```. In this case use:***
+```
+ngrok http 127.0.0.1:5000
+```
+
 ngrok will create a URL that looks something like this:
 ```
 https://ec7f-95-115-81-1.ngrok.io
