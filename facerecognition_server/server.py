@@ -12,8 +12,9 @@ def main():
     recognize.startCamera()
     global names2encodings # ugh, python...
     names2encodings = recognize.generateEncodings(
-        ['michi'], 
-    ['./images/michi/michi0.png']
+        ['Amir','Timo'], 
+
+    ['./images/Amir/amir.png','./images/Timo/timo.png']
     )
 
 @app.route('/')
@@ -30,5 +31,3 @@ def face():
             recognizedFaces.append(name2encoding[0])
 
     return json.dumps(recognizedFaces)
-
-

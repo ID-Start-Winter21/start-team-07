@@ -21,6 +21,8 @@ from ask_sdk_model import Response
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
+face_url= "https://78b6-93-104-123-83.ngrok.io/face"
+json_data = requests.get(face_url).json()
 
 class LaunchRequestHandler(AbstractRequestHandler):
     """Handler for Skill Launch."""
@@ -31,7 +33,15 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Guten Morgen, {name}. Oh je, du siehst verschlafen aus aber das kriegen wir schon hin. Wie geht es dir denn heute?"
+        face_url= "https://78b6-93-104-123-83.ngrok.io/face"
+        json_data = requests.get(face_url).json()
+        
+        if json_data:
+            name =  json_data[0]    
+            speak_output = "Guten Morgen, {}. Oh je, du siehst verschlafen aus aber das kriegen wir schon hin. Wie geht es dir denn heute?".format(name)
+        else:
+            speak_output = "Wer bist du? Und was hast du mit Timo gemacht? Aber schön mal wieder ein neues Gesicht zu sehen. Dann starten wir mal deine Standard Morgenroutine"
+            
 
         return (
             handler_input.response_builder
@@ -87,8 +97,15 @@ class duschenHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Gute Idee. Auch wenn ich keine Geruchssensoren habe, rieche ich dich bis ins Amazon Office. HA HA HA, Kleiner Spass. Möchtest du dass ich deine Duschplaylist abspiele oder willst du lieber eine ruhige, entspannte Dusche?"
-
+        
+        if json_data:
+            name =  json_data[0]    
+            speak_output = "Gute Idee. Auch wenn ich keine Geruchssensoren habe, rieche ich dich bis ins Amazon Office. HA HA HA, Kleiner Spass. Möchtest du dass ich deine Duschplaylist abspiele oder willst du lieber eine ruhige, entspannte Dusche?"
+        else:
+            speak_output = "Gute Idee. Auch wenn ich keine Geruchssensoren habe, rieche ich dich bis ins Amazon Office. HA HA HA, Kleiner Spass. Soll ich die Charts für dich abspielen?"    
+        
+        
+        
         return (
             handler_input.response_builder
                 .speak(speak_output)
@@ -105,6 +122,47 @@ class duschplaylistHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Juhuuu! Deine Duschparty fängt jetzt an. Viel Spaß! Sage Ich bin fertig mit duschen, wenn du aus der Dusche raus bist." '<audio src="https://morgenroutine.s3.amazonaws.com/RPReplay_Final1638197530.mp3"/>' "Du hast jetzt aber schon ganz schön viel Wasser verbraucht gell? Möchtest du wirklich weiterduschen oder soll ich deine Playlist beenden?"
+
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                .ask(speak_output)
+                .response
+        )
+
+
+class NachrichtenHandler(AbstractRequestHandler):
+    """Handler for Nachrichten."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("Nachrichten")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        news_url= "https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=de243d826f054ddea0c8b97e77cc2e15"
+        json_data = requests.get(news_url).json()
+        news1 = json_data['articles'][0]['description']
+        news2 = json_data['articles'][1]['description']
+        news3 = json_data['articles'][2]['description']
+        speak_output ="Hier sind die Nachrichten von heute. {}, {}, {}. Mit was möchtest du jetzt weitermachen?".format(news1,news2,news3) 
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                .ask(speak_output)
+                .response
+        )
+
+
+class chartsHandler(AbstractRequestHandler):
+    """Handler for charts."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("charts")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Juhuuu! Deine Duschparty fängt jetzt an. Viel Spaß! Sage Ich bin fertig mit duschen, wenn du aus der Dusche raus bist." '<audio src="https://morgenroutine.s3.amazonaws.com/charts.mp3"/>' "Du hast jetzt aber schon ganz schön viel Wasser verbraucht gell? Möchtest du wirklich weiterduschen oder soll ich die Musik beenden?"
 
 
         return (
@@ -234,23 +292,6 @@ class wetterHandler(AbstractRequestHandler):
                 .response
         )
 
-class nachrichtenHandler(AbstractRequestHandler):
-    """Handler for nachrichten."""
-    def can_handle(self, handler_input):
-        # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("nachrichten")(handler_input)
-
-    def handle(self, handler_input):
-        # type: (HandlerInput) -> Response
-        speak_output = "Hier sind die Nachrichten von heute. Geimpft, genesen, getestet: In Kürze gilt 3G in Bus und Bahn. Was Fahrgäste jetzt wissen müssen. Mit was möchtest du jetzt weitermachen? " 
-
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                .ask(speak_output)
-                .response
-        )
-
 class fun_factHandler(AbstractRequestHandler):
     """Handler for Hello funfact."""
     def can_handle(self, handler_input):
@@ -346,23 +387,6 @@ class CancelIntentHandler(AbstractRequestHandler):
                 .response
         )
 
-class nachrichtenHandler(AbstractRequestHandler):
-    """Handler for nachrichten."""
-    def can_handle(self, handler_input):
-        # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("nachrichten")(handler_input)
-
-    def handle(self, handler_input):
-        # type: (HandlerInput) -> Response
-        speak_output = "Hier sind die Nachrichten von heute. Geimpft, genesen, getestet: In Kürze gilt 3G in Bus und Bahn. Was Fahrgäste jetzt wissen müssen. Mit was möchtest du jetzt weitermachen? " 
-
-        return (
-            handler_input.response_builder
-                .speak(speak_output)
-                .ask(speak_output)
-                .response
-        )
-
 class FallbackIntentHandler(AbstractRequestHandler):
     """Single handler for Fallback Intent."""
     def can_handle(self, handler_input):
@@ -449,6 +473,7 @@ sb.add_request_handler(antwort_positivHandler())
 sb.add_request_handler(antwort_negativHandler())
 sb.add_request_handler(duschenHandler())
 sb.add_request_handler(duschplaylistHandler())
+sb.add_request_handler(chartsHandler())
 sb.add_request_handler(weiter_duschenHandler())
 sb.add_request_handler(dusche_stoppenHandler())
 sb.add_request_handler(ruhige_duscheHandler())
@@ -456,7 +481,7 @@ sb.add_request_handler(zaehneputzenHandler())
 sb.add_request_handler(fun_factHandler())
 sb.add_request_handler(aufgabenHandler())
 sb.add_request_handler(wetterHandler())
-sb.add_request_handler(nachrichtenHandler())
+sb.add_request_handler(NachrichtenHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(StopIntentHandler())
 sb.add_request_handler(CancelIntentHandler())

@@ -42,5 +42,3 @@ def recognizeFaceForEncoding(name2encoding):
                 return name2encoding
         
     return None
-
-        

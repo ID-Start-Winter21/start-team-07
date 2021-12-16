@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "öffne mornify",
+      "invocationName": "meine routine",
       "intents": [
         {
           "name": "AMAZON.RepeatIntent",
@@ -14,6 +14,8 @@
         {
           "name": "AMAZON.HelpIntent",
           "samples": [
+            "was kannst du noch",
+            "was kannst du denn noch alles",
             "mit was kannst du mir helfen",
             "wobei kannst du mir alles helfen",
             "bei was kannst du mir alles helfen",
@@ -49,6 +51,17 @@
         {
           "name": "AMAZON.StopIntent",
           "samples": [
+            "routine beenden",
+            "ich bin fertig für heute bis morgen",
+            "nichts mornify schließen",
+            "nicht mornify fertig",
+            "nichts Morgenroutine beenden",
+            "nichts mornify beenden",
+            "ich will nichts mehr machen ciao bis morgen",
+            "ich möchte nichts mehr tun tschüss bis morgen",
+            "ich bin fertig ich möchte nichts mehr tun",
+            "nichts tschüss",
+            "Nichts ich bin fertig",
             "mornify fertig",
             "mornify schließen",
             "mornify stop",
@@ -94,6 +107,7 @@
             }
           ],
           "samples": [
+            "mir geht es {positives} danke der nachfrage",
             "sehr {positives} und selbst",
             "ganz {positives} und selbst",
             "{positives} und selbst",
@@ -136,6 +150,7 @@
             }
           ],
           "samples": [
+            "mir geht es heute {negatives} aber danke der nachfrage",
             "ganz {negatives}",
             "ganz {neutral}",
             "mega {negatives}",
@@ -239,6 +254,8 @@
           "name": "zaehneputzen",
           "slots": [],
           "samples": [
+            "ich möchte zuerst meine zähne putzen",
+            "ich möchte meine zähne putzen",
             "lass uns jetzt zähne putzen",
             "ich möchte jetzt zähne putzen",
             "ich will zähne putzen jetzt",
@@ -279,6 +296,7 @@
           "name": "duschen",
           "slots": [],
           "samples": [
+            "ich springe jetzt unter die dusche",
             "ich will mit duschen anfangen",
             "ich geh erstmal unter die dusche",
             "ich geh jetzt unter die dusche",
@@ -320,6 +338,7 @@
           "name": "fun_fact",
           "slots": [],
           "samples": [
+            "kannst du mir einen funfact erzählen",
             "erzähl mir funfacts",
             "sag mir funfacts",
             "funfacts",
@@ -399,9 +418,10 @@
           ]
         },
         {
-          "name": "nachrichten",
+          "name": "Nachrichten",
           "slots": [],
           "samples": [
+            "kannst du mir noch die heutigen nachrichten nennen",
             "lese mir die heutigen nachrichten bitte vor",
             "lese mir die nachrichten bitte vor ",
             "heutige nachrichten bitte",
@@ -443,6 +463,7 @@
           "name": "wetter",
           "slots": [],
           "samples": [
+            "wie ist das wetter in münchen momentan",
             "was wird heute für ein wetter sein",
             "waas wird heute für ein wetter",
             "wie wird das wetter heute sein",
@@ -501,6 +522,12 @@
           "name": "fertig_duschen",
           "slots": [],
           "samples": [
+            "beende dusche",
+            "dusche beenden",
+            "beende duschen",
+            "duschen beenden",
+            "duschen fertig",
+            "fertig duschen",
             "fertig mit dusche",
             "dusche fertig",
             "bin fertig mit der dusche",
@@ -540,6 +567,10 @@
           "name": "dusche_stoppen",
           "slots": [],
           "samples": [
+            "dusche stop",
+            "stop dusche",
+            "dusche stoppen",
+            "duschen stoppen",
             "beende musik",
             "beende playlist",
             "playlist beenden",
@@ -560,6 +591,16 @@
             "musik stoppen",
             "stoppen",
             "playlist stoppen"
+          ]
+        },
+        {
+          "name": "charts",
+          "slots": [],
+          "samples": [
+            "spiele charts ab",
+            "spiele die charts ab ",
+            "charts abspielen",
+            "charts "
           ]
         }
       ],
@@ -815,5 +856,5 @@
       }
     }
   },
-  "version": "27"
+  "version": "52"
 }
